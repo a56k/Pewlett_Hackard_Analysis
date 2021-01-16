@@ -6,7 +6,6 @@ CREATE TABLE departments (
      UNIQUE (dept_name)
 );
 
-
 CREATE TABLE employees (
      emp_no INT NOT NULL,
      birth_date DATE NOT NULL,
@@ -16,7 +15,6 @@ CREATE TABLE employees (
      hire_date DATE NOT NULL,
      PRIMARY KEY (emp_no)
 );
-
 
 CREATE TABLE dept_manager (
     dept_no VARCHAR(4) NOT NULL,
@@ -36,7 +34,6 @@ CREATE TABLE salaries (
   FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
   PRIMARY KEY (emp_no)
 );
-
 
 CREATE TABLE dept_emp (
     emp_no INT NOT NULL,
